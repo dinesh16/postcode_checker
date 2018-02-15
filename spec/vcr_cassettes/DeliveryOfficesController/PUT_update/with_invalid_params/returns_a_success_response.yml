@@ -1,0 +1,247 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.postcodes.io/postcodes/WD187QP
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.13.5
+      Date:
+      - Mon, 12 Feb 2018 02:16:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '771'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"303-XUP2ZANSc3ZHQxR86ZwnNSqlvIc"
+      X-Gnu:
+      - Michael J Blanchard
+    body:
+      encoding: UTF-8
+      string: '{"status":200,"result":{"postcode":"WD18 7QP","quality":1,"eastings":509623,"northings":196053,"country":"England","nhs_ha":"East
+        of England","longitude":-0.416808625486477,"latitude":51.6525903251576,"european_electoral_region":"Eastern","primary_care_trust":"Hertfordshire","region":"East
+        of England","lsoa":"Watford 011E","msoa":"Watford 011","incode":"7QP","outcode":"WD18","parliamentary_constituency":"Watford","admin_district":"Watford","parish":"Watford,
+        unparished area","admin_county":"Hertfordshire","admin_ward":"Holywell","ccg":"NHS
+        Herts Valleys","nuts":"Hertfordshire","codes":{"admin_district":"E07000103","admin_county":"E10000015","admin_ward":"E05011048","parish":"E43000082","parliamentary_constituency":"E14001021","ccg":"E38000079","nuts":"UKH23"}}}'
+    http_version: 
+  recorded_at: Mon, 12 Feb 2018 02:16:48 GMT
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=WD18%207QP&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 11 Feb 2018 03:16:15 GMT
+      Expires:
+      - Mon, 12 Feb 2018 03:16:15 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '555'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cache-Control:
+      - public, max-age=86400
+      Age:
+      - '82833'
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "WD18 7QP",
+                       "short_name" : "WD18 7QP",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "Argyle Court",
+                       "short_name" : "Argyle Ct",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "King Georges Avenue",
+                       "short_name" : "King Georges Ave",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Watford",
+                       "short_name" : "Watford",
+                       "types" : [ "postal_town" ]
+                    },
+                    {
+                       "long_name" : "Hertfordshire",
+                       "short_name" : "Hertfordshire",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "England",
+                       "short_name" : "England",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United Kingdom",
+                       "short_name" : "GB",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Argyle Ct, King Georges Ave, Watford WD18 7QP, UK",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 51.6531162,
+                          "lng" : -0.4161802
+                       },
+                       "southwest" : {
+                          "lat" : 51.6521404,
+                          "lng" : -0.417347
+                       }
+                    },
+                    "location" : {
+                       "lat" : 51.6525987,
+                       "lng" : -0.4168083
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 51.65397728029149,
+                          "lng" : -0.4154146197084979
+                       },
+                       "southwest" : {
+                          "lat" : 51.6512793197085,
+                          "lng" : -0.418112580291502
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJf1msXfBqdkgRvNcBiB6vo7c",
+                 "types" : [ "postal_code" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Mon, 12 Feb 2018 02:16:48 GMT
+- request:
+    method: get
+    uri: https://api.postcodes.io/postcodes/WW88WW99
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx/1.13.5
+      Date:
+      - Mon, 12 Feb 2018 02:16:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '41'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"29-T14TWaKfjMuMFPoRgcsDj2g1ORs"
+    body:
+      encoding: UTF-8
+      string: '{"status":404,"error":"Invalid postcode"}'
+    http_version: 
+  recorded_at: Mon, 12 Feb 2018 02:16:48 GMT
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=WW88WW99&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 11 Feb 2018 03:16:16 GMT
+      Expires:
+      - Mon, 12 Feb 2018 03:16:16 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '65'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cache-Control:
+      - public, max-age=86400
+      Age:
+      - '82832'
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "results" : [],
+           "status" : "ZERO_RESULTS"
+        }
+    http_version: 
+  recorded_at: Mon, 12 Feb 2018 02:16:48 GMT
+recorded_with: VCR 4.0.0

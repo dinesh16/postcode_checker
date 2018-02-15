@@ -1,0 +1,29 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+**/logs
+*.log
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+*.dump
+.DS_Store
+
+# Ignore rvm setup files
+.ruby-version
+.ruby-gemset
+
+# Ignore database.yml
+#/config/database.yml
+
+# Ignore coverage
+/coverage
+
+*.bak
+log/development.log

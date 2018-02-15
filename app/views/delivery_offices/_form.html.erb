@@ -1,0 +1,32 @@
+<%= form_with(model: delivery_office, local: true) do |form| %>
+  <% if delivery_office.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(delivery_office.errors.count, "error") %> prohibited this delivery_office from being saved:</h2>
+
+      <ul>
+      <% delivery_office.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :delivery_office_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address, id: :delivery_office_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :postcode %>
+    <%= form.text_field :postcode, id: :delivery_office_postcode %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

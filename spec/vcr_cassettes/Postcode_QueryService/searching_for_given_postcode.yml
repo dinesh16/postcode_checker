@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.postcodes.io/postcodes/WD186FU
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.13.5
+      Date:
+      - Tue, 13 Feb 2018 01:11:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '771'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"303-Qqw8rjPs4Zyce8iM0ACfURBzLkk"
+      X-Gnu:
+      - Michael J Blanchard
+    body:
+      encoding: UTF-8
+      string: '{"status":200,"result":{"postcode":"WD18 6FU","quality":1,"eastings":509853,"northings":195358,"country":"England","nhs_ha":"East
+        of England","longitude":-0.413703422627394,"latitude":51.6462989617837,"european_electoral_region":"Eastern","primary_care_trust":"Hertfordshire","region":"East
+        of England","lsoa":"Watford 011B","msoa":"Watford 011","incode":"6FU","outcode":"WD18","parliamentary_constituency":"Watford","admin_district":"Watford","parish":"Watford,
+        unparished area","admin_county":"Hertfordshire","admin_ward":"Holywell","ccg":"NHS
+        Herts Valleys","nuts":"Hertfordshire","codes":{"admin_district":"E07000103","admin_county":"E10000015","admin_ward":"E05011048","parish":"E43000082","parliamentary_constituency":"E14001021","ccg":"E38000079","nuts":"UKH23"}}}'
+    http_version: 
+  recorded_at: Tue, 13 Feb 2018 01:11:09 GMT
+recorded_with: VCR 4.0.0

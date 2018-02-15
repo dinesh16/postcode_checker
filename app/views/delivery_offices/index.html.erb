@@ -1,0 +1,24 @@
+<%= render 'menu' %>
+<p id="notice"><%= notice %></p>
+
+<h1>Delivery Offices</h1>
+<% if @delivery_offices.present? %>
+  <table>
+    <%= render 'header' %>
+
+    <tbody>
+      <% @delivery_offices.each do |delivery_office| %>
+        <tr>
+          <%= render 'body', delivery_office: delivery_office %>
+          <td><%= link_to 'Show', delivery_office %></td>
+          <td><%= link_to 'Edit', edit_delivery_office_path(delivery_office) %></td>
+          <td><%= link_to 'Destroy', delivery_office, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<%end%>
+
+<br>
+
+<%= link_to 'New Delivery Office', new_delivery_office_path %>

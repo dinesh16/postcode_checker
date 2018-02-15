@@ -1,0 +1,24 @@
+<%= render 'menu' %>
+
+<p id="notice"><%= notice %></p>
+<h1>Delivery Offices</h1>
+
+<% if @errors.present? %>
+  <%= @errors %>
+<% end %>
+
+<% if @delivery_offices.present? %>
+  <table>
+    <%= render 'header' %>
+    <tbody>
+      <% @delivery_offices.each do |delivery_office| %>
+        <tr>
+          <%= render 'body', delivery_office: delivery_office %>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<%end%>
+
+<br /><br />
+<%= render 'search_form' %>
