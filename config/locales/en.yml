@@ -31,3 +31,8 @@
 
 en:
   hello: "Hello world"
+  delivery_office:
+    created: Delivery office was successfully created
+    updated: Delivery office was successfully updated hello
+    deleted: Delivery office was successfully destroyed.
+    service_not_available: Service not available

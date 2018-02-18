@@ -9,6 +9,7 @@ class Connection
     response = adapter.send(method, endpoint, params)
     response.body
   rescue Faraday::Error => e
+    Rails.logger.error(e.message)
     { errors: e.message }
   end
 
